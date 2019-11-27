@@ -778,8 +778,8 @@
         background-color: var(--body-color);
     }
 
-    .file-commit-form .commit-form {
-        border-color: var(--border-color);
+    .commit-form {
+        border-color: var(--border-color) !important;
     }
 
     .commit-sha {
@@ -998,6 +998,15 @@
         background-color: var(--body-color);
         border-color: var(--border-color);
     }
+    
+    .TimelineItem:before,
+    .TimelineItem-badge {
+        background-color: var(--border-color) !important;
+        border-color: var(--border-color);
+    }
+    .TimelineItem-badge {
+        color: #959da5;
+    }
 
     .timeline-comment-wrapper>.timeline-comment::before,
     .timeline-new-comment .timeline-comment::before {
@@ -1170,6 +1179,7 @@
 
     .branch-action-body {
         background-color: var(--body-color);
+        border-color: var(--border-color) !important;
     }
 
     .branch-action-body .merge-message,
